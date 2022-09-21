@@ -1,0 +1,81 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: cursive;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+.navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightskyblue;
+    color: white;
+}
+
+.navbar-links{
+    color: orange;
+}
+
+.menu-itens{
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.menu-itens li:hover{
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu-itens li{
+    padding: 5px 14px;
+}
+
+/* NAVBAR MENU RESPONSIVA*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none; /**/
+   } 
+   /*HAMBURGER MENU*/
+   .menu-hamburger {
+    display: none;
+    font-size: 20px;
+    user-select: none;
+   }
+   /* APLICAÇÃO MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu-itens { 
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu-itens li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+   }
+   .menu-itens li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu-itens{
+    display: block;
+   }
+   .menu-hamburger {
+    display: block;
+   }
