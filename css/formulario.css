@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:ital,wght@1,200&family=Rubik+Mono+One&family=Source+Code+Pro&display=swap');
+
+
+#titulo{
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(255, 120, 0, 1.0);
+    
+    font-size: 100%;
+}
+
+#subtitulo{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 120, 0, 1.0);
+}
+
+
+
+.container-form{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+}
+
+.telefone{
+    margin-right: 0px;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: rgba(255, 120, 0, 1.0);
+    margin-right: 20px;
+}
+
+fieldset{
+    border: 0;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="telefone"], .campo input[type="textarea"]{
+    padding: 0.2em;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    size: 60%;
+    margin-bottom: 0.2em;
+    
+}
+
+textarea{
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    width: 320px; height: 129px;
+    
+}
+
+
+
+.campo input:focus, .campo textarea:focus{
+    background: rgba(255, 120, 0, 1.0);
+}
+
+.botao{
+    font-family: 'Montserrat', sans-serif;
+    width: 80px;
+    height: 50px;
+    font-size: 80%;
+    background: rgba(255, 120, 0, 1.0);
+    border: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: #fff ;
+    padding: 0.2em o.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+
+botao:hover {
+    background:#fff;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow:none;
+}
+
+

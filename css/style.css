@@ -40,8 +40,16 @@ li {
     font-size: 24px;
     text-transform: uppercase;/*Letras Maiúsculas*/
     letter-spacing: 4px;
-    color:rgba(255, 120, 0, 1.0);
+    color: #034603;
     transition: 0.3s;
+}
+
+span{
+    color: #f93a00;
+}
+
+.tou{
+    color: #f93a00;
 }
 
 .navbar{
@@ -93,6 +101,9 @@ input[type=checkbox]{
     height: 400px;
     background-color: orangered;
     margin-right: 10vw;
+    background-image: url("../img/marmita.jpeg");
+    background-repeat: no-repeat;
+    background-position:center;    
 }
 
 .marmitese-titulo{
@@ -228,9 +239,10 @@ footer{
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
-    padding-right: 20px;
-    margin-left: 30px;
+    margin-right: 4vw;
+    margin-left: 50px;
     margin-bottom: 10vh;
+    width: 80%;
 }
 
 /* APLICAÇÃO MEDIA QUERIES */
@@ -265,6 +277,8 @@ footer{
     color: rgba(255, 120, 0, 1.0);
    }
 
+
+
    /*Inicio do conteúdo inicial*/
     .conteudo-out-menu{
         display: flex;
@@ -276,6 +290,11 @@ footer{
         width: 100%;
         margin-right: 0px;
         margin-top: 0px;
+    }
+
+    .imglogo{
+        width: 200px;
+        height: 200px;
     }
 
     .img-quemsomos{

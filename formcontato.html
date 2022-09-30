@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Marmitou</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/formulario.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--Link com o CSS Externo-->
-    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
+
+    <script></script>
         <!--Menu Inicial-->
     <nav class="navbar">
 
-        <a class="logo-menu" href="pginicial.html">Marmitou</a>
+        <a class="logo-menu" href="pginicial.html">Marmi<span>tou!</span></a>
 
         <ul class="itens-menu">
 
@@ -34,39 +38,70 @@
 
     </nav>
 
-
-    
-        <div class="conteudo-out-menu">
-            <div class="img-inicial">
-    
-            </div>
-    
-            <div class="texto-inicial">
-                <div class="marmitese-titulo">
-                    <h1>#Marmitou?</h1>
+    <div class="container-form">
+        <div class="campo">
+            <h1 id="titulo">Entre em contato conosco!</h1>
+            <br>
+            <p id="subtitulo"><strong>Preencha abaixo:</strong></p>
+            <br>
+            <br>
+          </div>
+        
+           <form>
+               <fieldset class="grupo">
+                   <div class="campo">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" name="nome" id="nome"required>
+                   </div>
+                   
+                   <div class="campo">
+                    <label for="telefone"><strong>Telefone:</strong></label>
+                    <input type="telefone" onkeypress="return event.charCode >=48 && event.charCode<=57"name="telefone" id="telefone" required>
+                   </div>
+        
+                   <div class="campo">
+                    <label for="email"><strong>E-mail:</strong></label>
+                    <input type="email" name="email" id="email" required>
+                   </div>
+               </fieldset>
+        
+        
+        <div class="campo">  
+            <label><strong>Informe sua dúvida:</strong></label><br>
+            <div class="container">
+                <div class="comment">
+                    <textarea row="6"   class="textinput" nome="experiencia" required></textarea>
                 </div>
-                <div class="marmitese-descricao">
-                    <h3>Venha conhecer nossos produtos!</h3>
-                    <a href='https://www.freecodecamp.org/'>Link para o freeCodeCamp</a>
-                </div>
             </div>
-        </div> 
-        <footer>
-            <div class="footer-container">
-                <h3>Marmitou</h3>
-                <p>De mãe para filha até sua mesa! <br>
-                    Confira nossas redes sociais! </p>
-                <!--Inserir icones de redes sociais-->
-                <ul class="socials">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="footer-bottom">
-                <p>copyright &copy; <a href="#">Squad 03 XPTO</a>  </p>
-            </div>
-        </footer>
             
-    
+        </div>
+        
+        <button onclick="msg()" type="submit" class="botao">Enviar</button>    
+        </form>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <h3>Marmitou</h3>
+            <p>De mãe para filha até sua mesa! <br>
+                Confira nossas redes sociais! </p>
+            <!--Inserir icones de redes sociais-->
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; <a href="#">Squad 03 XPTO</a>  </p>
+        </div>
+    </footer>
+
+               
 </body>
+
+<script type="text/javascript" src="js/form.js"></script>
+
+
+
 </html>

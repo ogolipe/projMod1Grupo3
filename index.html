@@ -1,161 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/indexcarrinho.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hepta+Slab:300,700|Lato:400,700&display=swap ">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<body>
+  <!-- 
+    =========================================================================
+    Nome do Projeto: Carrinho de Compras em Javascript
+    Finalidade: Cursos de Informática do IFSP campus Caraguatatuba 
+    Fonte Base: Projetos do Curso B7Web - https://b7web.com.br/ 
+    Autor: Denny Paulista Azevedo Filho
+    License: MIT License
+    ========================================================================= 
+  -->
 
-    <nav class="navbar">
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="utf-8" />
+      <title>Marmitou</title>
+      <link rel="stylesheet" href="./css/indexcarrinho.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Denny Azevedo">
+      <meta name="keywords" content="web, curso web, css, html, js, javascript">
+      <meta name="description" content="Desenvolvimento WEB - Treinamento e aperfeiçoamento">
+      <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+      <!-- Modelos para clonagem e inclusão na área de exibição -->
+      <div class="models">
+          <div class="models-item">
+              <a href="">
+                  <div class="models-item--img"><img src="" /></div>
+                  <div class="models-item--add">+</div>
+              </a>
+              <div class="models-item--price">R$ --</div>
+              <div class="models-item--name">--</div>
+              <div class="models-item--desc">--</div>
+          </div>
+          <div class="cart--item">
+              <img src="" />
+              <div class="cart--item-nome">--</div>
+              <div class="cart--item--qtarea">
+                  <button class="cart--item-qtmenos">-</button>
+                  <div class="cart--item--qt">1</div>
+                  <button class="cart--item-qtmais">+</button>
+              </div>
+          </div>
+      </div>
+      <header>
+          <div class="menu-openner">
+              <span>0</span>
+              <span class="material-icons">shopping_cart</span>
+          </div>
+      </header>
+      <main>
+          
+          <nav class="navbar">
 
-        <a class="logo-menu" href="pginicial.html">Marmitou</a>
-
-        <ul class="itens-menu">
-
-            <!--Menu Hamburger Mobile-->
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-            <div class="menu">
-                <li><a href="quemsomos.html">Quem Somos</a></li>
-                <li><a href="index.html">Nossos Produtos</a></li>
-                <li><a href="cardsequipe.html">Nossa Equipe</a></li>
-                <li><a href="formcontato.html">Contato</a></li>
-            </div>
-        </ul>
-        
-    </nav>
+            <a class="logo-menu" href="pginicial.html">Marmitou!</a>
     
-    <div class="container-carrinho">
-
-        <div class="models">
-            <div class="models-item">
-                <a href="">
-                    <div class="models-item--img">
-                        <img src=""/>
-                    </div>
-                    <div class="models-item--add">+</div>
-                </a>
-                <div class="models-item--price">R$--</div>
-                <div class="models-item--name">--</div>
-                <div class="models-item--desc">--</div>
-            </div>
-            <div class="cart--item">
-                <img src=""/>
-                <div class="cart--item-nome">--</div>
-                <div class="cart--item--qtarea">
-                    <button class="cart--item-qtmenos">-</button>
-                    <div class="cart--item--qt">1</div>
-                    <button class="cart--item-qtmais">+</button>
-                </div>
-            </div>
-        </div>
-
-        
-             
-        <main>
-            <div class="models-area"></div>
-        </main>
-        <aside>
-            
-            <div class="cart--area">
-                <div class="menu-closer">
-                    <span class="material-icons">close</span>
-                </div>
-                <h1>Suas Marmitas</h1>
-                <div class="cart"></div>
-                <div class="cart--details">
-                    <div class="cart--totalitem subtotal">
-                        <span>Subtotal</span>
-                        <span>R$--</span>
-                    </div>
-                    <div class="cart--totalitem desconto">
-                        <span>Desconto (-10%)</span>
-                        <span>R$--</span>
-                    </div>
-                    <div class="cart--totalitem total big">
-                        <span>Total</span>
-                        <span>R$--</span>
-                    </div>
-                    <div class="cart--finalizar">Finalizar a compra</div>
-                </div>
-            </div>
-            
-        </aside>
+            <ul class="itens-menu">
     
-        <div class="modelsWindowArea">
-
-            
-
-            <div class="modelWindowsBody">
-                <div class="modelsInfo--cancelMobileButton">Voltar</div>
-                <div class="modelsBig">
-                    <img src="">
-                </div>
-                <div class="modelsInfo">
-                    <h1>--</h1>
-                    <div class="modelsInfo--desc">--</div>
-                    <div class="modelsInfo--sizearea">
-                        <div class="modelsInfo--sector">Escala</div>
-                        <div class="modelsInfo--sizes">
-                            <div data-key="0" class="modelsInfo--size selected">Pequeno<span>--</span></div>
-                            <div data-key="1" class="modelsInfo--size">Médio<span>--</span></div>
-                            <div data-key="2" class="modelsInfo--size">Grande<span>--</span></div>
-                        </div>
-                    </div>
-                    <div class="models--pricearea">
-                        <div class="modelsInfo--sector--pres">Preço</div>
-                        <div class="modelsInfo--price">
-                            <div class="modelsInfo--actualPrice">R$--</div>
-                            <div class="modelsInfo--qtarea">
-                                <button class="modelsInfo--qtmenos">-</button>
-                                <div class="modelsInfo--qt">1</div>
-                                <button class="modelsInfo--qtmais">+</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
-                    <div class="modelsInfo--cancelButton">Cancelar</div>
-                </div>
-            </div>
-        </div>
+                <!--Menu Hamburger Mobile-->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
     
-        
-
-    </div>   
-    
-    <div class="container-menuopenner">
-        <div class="menu--openner">
-            <span>0</span>
-            <span class="material-icons">shopping-cart</span>
-        </div>
-    </div>
-        
-
-    <footer>
-        <div class="footer-container">
-            <h3>Marmitou</h3>
-            <p>De mãe para filha até sua mesa! <br>
-                Confira nossas redes sociais! </p>
-            <!--Inserir icones de redes sociais-->
-            <ul class="socials">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <div class="menu">
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                    <li><a href="index.html">Nossos Produtos</a></li>
+                    <li><a href="cardsequipe.html">Nossa Equipe</a></li>
+                    <li><a href="formcontato.html">Contato</a></li>
+                </div>
             </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>copyright &copy; <a href="#">Squad 03 XPTO</a>  </p>
-        </div>
-    </footer>
-
-    <script src="./js/models.js"></script>
-    <script src="./js/script.js"></script>
-</body>
-</html>
+            
+            </nav>
+            <!-- <h1>Modelos</h1> -->
+          <div class="models-area"></div>
+        <!-- <footer>
+            <div class="footer-container">
+                <h3>Marmitou</h3>
+                <p>De mãe para filha até sua mesa! <br>
+                    Confira nossas redes sociais! </p>
+                Inserir icones de redes sociais
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy; <a href="#">Squad 03 XPTO</a>  </p>
+            </div>
+        </footer> -->
+          
+      </main>
+      <aside>
+          <div class="cart--area">
+              <div class="menu-closer">
+                  <span class="material-icons">close</span>
+              </div>
+              <h1>Seus Prodrutos</h1>
+              <div class="cart"></div>
+              <div class="cart--details">
+                  <div class="cart--totalitem subtotal">
+                      <span>Subtotal</span>
+                      <span>R$ --</span>
+                  </div>
+                  <div class="cart--totalitem desconto">
+                      <span>Desconto (-10%)</span>
+                      <span>R$ --</span>
+                  </div>
+                  <div class="cart--totalitem total big">
+                      <span>Total</span>
+                      <span>R$ --</span>
+                  </div>
+                  <a href="marmitou.html"><div class="cart--finalizar">Finalizar a compra</div></a>
+                  
+              </div>
+          </div>
+      </aside>
+      <div class="modelsWindowArea">
+          <div class="modelsWindowBody">
+              <!-- 
+                  Este botão é o cancelar do mobile (mostrar com F12) a ação do cancelar
+                  da janela modal vai ser igual, logo vamos fazer uma função
+              -->
+              <div class="modelsInfo--cancelMobileButton">Voltar</div>
+              <div class="modelsBig">
+                  <img src="" />
+              </div>
+              <div class="modelsInfo">
+                  <h1>--</h1>
+                  <div class="modelsInfo--desc">--</div>
+                  <div class="modelsInfo--sizearea">
+                      <div class="modelsInfo--sector">Escala</div>
+                      <div class="modelsInfo--sizes">
+                          <div data-key="0" class="modelsInfo--size">Pequeno <span>--</span></div>
+                          <div data-key="1" class="modelsInfo--size">Médio <span>--</span></div>
+                          <div data-key="2" class="modelsInfo--size selected">Grande <span>--</span></div>
+                      </div>
+                  </div>
+                  <div class="modelsInfo--pricearea">
+                      <div class="modelsInfo--sector">Preço</div>
+                      <div class="modelsInfo--price">
+                          <div class="modelsInfo--actualPrice">R$ --</div>
+                          <div class="modelsInfo--qtarea">
+                              <button class="modelsInfo--qtmenos">-</button>
+                              <div class="modelsInfo--qt">1</div>
+                              <button class="modelsInfo--qtmais">+</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
+                  <div class="modelsInfo--cancelButton">Cancelar</div>
+              </div>
+          </div>
+      </div>
+  
+      <script type="text/javascript" src="js/models.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+  </body>
+  </html>
